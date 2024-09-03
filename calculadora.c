@@ -8,14 +8,7 @@ void fin();
 int main(){
   titulo();
   int opc;
-  printf("Menú:\n");
-  printf("1. Suma\n");
-  printf("2. Resta\n");
-  printf("3. Multiplicación\n");
-  printf("4. División\n");
-  printf("5. Módulo\n");
-  printf("6. Salir\n");
-  printf("Ingrese una opción (1-6): ");
+  menu();
   scanf("%d", &opc);
   while(opc!=6){
     menu(&opc);
@@ -27,8 +20,7 @@ int main(){
     	scanf("%d",&first);
     	printf("Dame el segundo valor\n");
     	scanf("%d",&second);
-    	int resultado = first*second;
-    	printf("El resultado de %d % %d es %d", first, second, resultado)
+    	multiplicacion(first, second);
     	
   }
     if(opc == 5){
@@ -38,19 +30,31 @@ int main(){
     	scanf("%d",&first);
     	printf("Dame el segundo valor\n");
     	scanf("%d",&second);
-    	int resultado = first%second;
-    	printf("El resultado de %d % %d es %d", first, second, resultado)
-    	
+    	modulo(first, second);
   }
-    
-    printf("Menú:\n");
-    printf("1. Suma\n");
-    printf("2. Resta\n");
-    printf("3. Multiplicación\n");
-    printf("4. División\n");
-    printf("5. Módulo\n");
-    printf("6. Salir\n");
-    printf("Ingrese una opción (1-6): ");
+    menu();
     scanf("%d", &opc);
       
 }
+
+void modulo(int first, int second){
+    	int resultado = first%second;
+    	printf("El resultado de %d % %d es %d", first, second, resultado)
+}
+
+void multiplicacion(int first, int second){
+    	int resultado = first%second;
+    	printf("El resultado de %d * %d es %d", first, second, resultado)
+}
+
+void menu(){
+  printf("Menú:\n");
+  printf("1. Suma\n");
+  printf("2. Resta\n");
+  printf("3. Multiplicación\n");
+  printf("4. División\n");
+  printf("5. Módulo\n");
+  printf("6. Salir\n");
+  printf("Ingrese una opción (1-6): ");
+}
+  
