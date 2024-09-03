@@ -18,15 +18,6 @@ int main(){
     if(opc == 3){
     	multiplicacion();
   }
-    if(opc == 4){
-      float num1, num2, resultado;
-      printf("Ingrese el numerador: ");
-      scanf("%f", &num1);
-      printf("Ingrese el denominador: ");
-      scanf("%f", &num2);
-      resultado = dividir(num1, num2);
-      printf("El resultado es: %.2f\n", resultado);
-    }
 
     
     if(opc == 5){
