@@ -32,6 +32,23 @@ void menu(int * opc){
   scanf("%d", opc); 
 }
 
+void opciones(int opc){
+  switch(opc){
+    case 1:
+      suma();
+      break;
+    case 2:
+    case 3:
+    case 4:
+    case 5:
+    case 6:
+      fin();
+      break;
+    default:
+      printf("Opcion no valida\n);
+  }
+}
+
 void suma(){
   printf("\t SUMA");
   int s1, s2, t;
