@@ -1,4 +1,6 @@
 #include<stdio.h>
+#include<stdlib.h>
+#include<wwindows.h>
 void titulo();
 void menu(int *);
 void opciones(int);
@@ -23,6 +25,8 @@ int main(){
     if(opc == 5){
     	modulo();
   }
+    Sleep(5000);
+    system("cls";
     menu();
     scanf("%d", &opc);
       
