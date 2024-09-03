@@ -39,10 +39,10 @@ void modulo(){
     	printf("Ingresa el segundo valor\n");
     	scanf("%d",&second);
     	int resultado = first%second;
-    	printf("El resultado de %d % %d es %d", first, second, resultado)
+    	printf("El resultado de %d % %d es %d\n", first, second, resultado)
 }
 
-void multiplicacion(int first, int second){
+void multiplicacion(){
       int first, second;
       printf("\tMULTIPLICACIOn\n");
     	printf("Ingresa el primer valor\n");
@@ -50,15 +50,7 @@ void multiplicacion(int first, int second){
     	printf("Ingresa el segundo valor\n");
     	scanf("%d",&second);
     	int resultado = first%second;
-    	printf("El resultado de %d * %d es %d", first, second, resultado)
-}
-
-float dividir(float numerador, float denominador) {
-    if (denominador == 0) {
-        printf("Division por cero no permitida.\n");
-        return 0;
-    }
-    return numerador / denominador;
+    	printf("El resultado de %d * %d es %d\n", first, second, resultado)
 }
 
 void menu(){
