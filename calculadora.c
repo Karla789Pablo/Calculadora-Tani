@@ -10,6 +10,10 @@ void suma();
 
 void fin();
 
+void multiplicacion();
+
+void modulo();
+
 int main(){
   int opc;
   titulo();
