@@ -14,35 +14,34 @@ int main(){
     menu(&opc);
     opciones(opc);
     if(opc == 3){
-      int first, second;
-      printf("Haremos una multiplicacion\n");
-    	printf("Dame el primer valor\n");
-    	scanf("%d",&first);
-    	printf("Dame el segundo valor\n");
-    	scanf("%d",&second);
-    	multiplicacion(first, second);
-    	
+    	multiplicacion();
   }
     if(opc == 5){
-      int first, second;
-      printf("Haremos un modulo\n");
-    	printf("Dame el primer valor\n");
-    	scanf("%d",&first);
-    	printf("Dame el segundo valor\n");
-    	scanf("%d",&second);
-    	modulo(first, second);
+    	modulo();
   }
     menu();
     scanf("%d", &opc);
       
 }
 
-void modulo(int first, int second){
+void modulo(){
+      int first, second;
+      printf("\tMODULO\n");
+    	printf("Ingresa el primer valor\n");
+    	scanf("%d",&first);
+    	printf("Ingresa el segundo valor\n");
+    	scanf("%d",&second);
     	int resultado = first%second;
     	printf("El resultado de %d % %d es %d", first, second, resultado)
 }
 
 void multiplicacion(int first, int second){
+      int first, second;
+      printf("\tMULTIPLICACIOn\n");
+    	printf("Ingresa el primer valor\n");
+    	scanf("%d",&first);
+    	printf("Ingresa el segundo valor\n");
+    	scanf("%d",&second);
     	int resultado = first%second;
     	printf("El resultado de %d * %d es %d", first, second, resultado)
 }
