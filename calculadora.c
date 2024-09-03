@@ -11,7 +11,7 @@ void fin();
 int main(){
   int opc;
   titulo();
-  while(opc!=5){
+  while(opc!=6){
     menu(&opc);
     opciones(opc);
   }
@@ -41,4 +41,8 @@ void suma(){
   scanf("%d", &s2);
   t = s1 + s2;
   printf("\n El resultado es %d", t);
+}
+
+void fin(){
+  printf("\n  Fin del programa.");
 }
