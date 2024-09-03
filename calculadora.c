@@ -1,4 +1,7 @@
 #include<stdio.h>
+#include<stdlib.h>
+#include<windows.h>
+
 void titulo();
 void menu(int *);
 void opciones(int);
@@ -13,6 +16,8 @@ int main(){
   while(opc!=6){
     menu(&opc);
     opciones(opc);
+    Sleep(5000);
+    system("cls";
   }
 }
 
@@ -38,8 +43,11 @@ void opciones(int opc){
       break;
     case 2:
     case 3:
+      multiplicacion();
+      break;
     case 4:
     case 5:
+      modulo();
     case 6:
       fin();
       break;
@@ -47,7 +55,27 @@ void opciones(int opc){
       printf("Opcion no valida\n);
   }
 }
+void modulo(){
+      int first, second;
+      printf("\tMODULO\n");
+    	printf("Ingresa el primer valor\n");
+    	scanf("%d",&first);
+    	printf("Ingresa el segundo valor\n");
+    	scanf("%d",&second);
+    	int resultado = first%second;
+    	printf("El resultado de %d % %d es %d\n", first, second, resultado)
+}
 
+void multiplicacion(){
+      int first, second;
+      printf("\tMULTIPLICACIOn\n");
+    	printf("Ingresa el primer valor\n");
+    	scanf("%d",&first);
+    	printf("Ingresa el segundo valor\n");
+    	scanf("%d",&second);
+    	int resultado = first%second;
+    	printf("El resultado de %d * %d es %d\n", first, second, resultado)
+}
 void suma(){
   printf("\t SUMA");
   int s1, s2, t;
