@@ -23,6 +23,17 @@ int main(){
     	multiplicacion(first, second);
     	
   }
+    if(opc == 4){
+      float num1, num2, resultado;
+      printf("Ingrese el numerador: ");
+      scanf("%f", &num1);
+      printf("Ingrese el denominador: ");
+      scanf("%f", &num2);
+      resultado = dividir(num1, num2);
+      printf("El resultado es: %.2f\n", resultado);
+    }
+
+    
     if(opc == 5){
       int first, second;
       printf("Haremos un modulo\n");
@@ -45,6 +56,14 @@ void modulo(int first, int second){
 void multiplicacion(int first, int second){
     	int resultado = first%second;
     	printf("El resultado de %d * %d es %d", first, second, resultado)
+}
+
+float dividir(float numerador, float denominador) {
+    if (denominador == 0) {
+        printf("Division por cero no permitida.\n");
+        return 0;
+    }
+    return numerador / denominador;
 }
 
 void menu(){
