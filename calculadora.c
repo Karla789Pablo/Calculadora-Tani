@@ -8,6 +8,7 @@ void opciones(int);
 
 void suma();
 void resta ();
+void division();
 
 void fin();
 
@@ -53,6 +54,7 @@ void opciones(int opc){
       multiplicacion();
       break;
     case 4:
+      division();
     case 5:
       modulo();
     case 6:
@@ -103,6 +105,16 @@ printf("Ingresa otro valor");
  scanf("%d", &n2);
 resultado=n1-n2;
 printf("Resultado: %d", resultado);
+}
+
+void division(){
+    float num1, num2, resultado;
+    printf("Ingrese el numerador: ");
+    scanf("%f", &num1);
+    printf("Ingrese el denominador: ");
+    scanf("%f", &num2);
+    resultado = dividir(num1, num2);
+    printf("El resultado es: %.2f\n", resultado);
 }
 
 void fin(){
