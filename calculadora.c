@@ -3,6 +3,8 @@ void titulo();
 void menu(int *);
 void opciones(int);
 
+VOID suma();
+
 void fin();
 
 int main(){
