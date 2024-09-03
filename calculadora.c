@@ -1,6 +1,6 @@
 #include<stdio.h>
 #include<stdlib.h>
-#include<wwindows.h>
+#include<windows.h>
 void titulo();
 void menu(int *);
 void opciones(int);
