@@ -113,6 +113,10 @@ void division(){
     scanf("%f", &num1);
     printf("Ingrese el denominador: ");
     scanf("%f", &num2);
+    if (num2 == 0) {
+      printf("Error: División por cero no permitida.\n");
+      return 0;
+    }
     resultado = num1 / num2;
     printf("El resultado es: %.2f\n", resultado);
 }
