@@ -3,5 +3,8 @@ void titulo();
 void menu(int *);
 void opciones(int);
 
-void mult();
-void div();
+void fin();
+
+int main(){
+  int opc;
+}
