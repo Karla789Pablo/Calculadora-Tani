@@ -2,6 +2,8 @@
 void titulo();
 void menu(int *);
 void opciones(int);
+void multiplicacion();
+void modulo();
 
 void fin();
 
