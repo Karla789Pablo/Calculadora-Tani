@@ -4,6 +4,7 @@ void menu(int *);
 void opciones(int);
 
 VOID suma();
+void resta();
 
 void fin();
 
