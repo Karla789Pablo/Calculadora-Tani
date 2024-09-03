@@ -7,6 +7,7 @@ void menu(int *);
 void opciones(int);
 
 void suma();
+void resta ();
 
 void fin();
 
@@ -46,6 +47,8 @@ void opciones(int opc){
       suma();
       break;
     case 2:
+      resta();
+      break;
     case 3:
       multiplicacion();
       break;
@@ -89,6 +92,17 @@ void suma(){
   scanf("%d", &s2);
   t = s1 + s2;
   printf("\n El resultado es %d", t);
+}
+
+void resta() {
+  printf("RESTA");
+  int n1, n2,resultado;
+printf("Ingresa un valor");
+ scanf("%d", &n1);
+printf("Ingresa otro valor");
+ scanf("%d", &n2);
+resultado=n1-n2;
+printf("Resultado: %d", resultado);
 }
 
 void fin(){
