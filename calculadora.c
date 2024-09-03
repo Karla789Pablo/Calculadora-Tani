@@ -13,3 +13,7 @@ int main(){
     opciones(opc);
   }
 }
+
+void titulo(){
+  printf("\t &&& CALCULADORA &&&");
+}
