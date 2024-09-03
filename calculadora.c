@@ -61,7 +61,7 @@ void opciones(int opc){
       fin();
       break;
     default:
-      printf("Opcion no valida\n);
+      printf("Opcion no valida\n");
   }
 }
 void modulo(){
@@ -72,7 +72,7 @@ void modulo(){
     	printf("Ingresa el segundo valor\n");
     	scanf("%d",&second);
     	int resultado = first%second;
-    	printf("El resultado de %d % %d es %d\n", first, second, resultado)
+    	printf("El resultado de %d % %d es %d\n", first, second, resultado);
 }
 
 void multiplicacion(){
@@ -83,7 +83,7 @@ void multiplicacion(){
     	printf("Ingresa el segundo valor\n");
     	scanf("%d",&second);
     	int resultado = first%second;
-    	printf("El resultado de %d * %d es %d\n", first, second, resultado)
+    	printf("El resultado de %d * %d es %d\n", first, second, resultado);
 }
 void suma(){
   printf("\t SUMA");
