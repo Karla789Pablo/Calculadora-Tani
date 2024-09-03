@@ -23,3 +23,5 @@ void titulo(){
 void menu(int * opc){
   printf("\n\n Selecciona que hacer");
 }
+
+void resta
