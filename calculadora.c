@@ -19,16 +19,15 @@ int main(){
     opciones(opc);
     if(opc == 3){
     	multiplicacion();
-  }
-
-    
+    }
     if(opc == 5){
-    	modulo();
-  }
+      modulo();
+    }
     Sleep(5000);
     system("cls";
     menu();
     scanf("%d", &opc);
+  }
       
 }
 
