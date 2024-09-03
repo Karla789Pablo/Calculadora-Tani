@@ -23,7 +23,7 @@ int main(){
     menu(&opc);
     opciones(opc);
     Sleep(5000);
-    system("cls";
+    system("cls");
   }
 }
 
@@ -113,7 +113,7 @@ void division(){
     scanf("%f", &num1);
     printf("Ingrese el denominador: ");
     scanf("%f", &num2);
-    resultado = dividir(num1, num2);
+    resultado = num1 / num2;
     printf("El resultado es: %.2f\n", resultado);
 }
 
