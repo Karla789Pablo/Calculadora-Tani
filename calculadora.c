@@ -10,7 +10,7 @@ void fin();
 int main(){
   int opc;
   titulo();
-  while(opc!=5){
+  while(opc!=6){
     menu(&opc);
     opciones(opc);
   }
