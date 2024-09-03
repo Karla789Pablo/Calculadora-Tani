@@ -23,12 +23,13 @@ void titulo(){
 
 void menu(int * opc){
   printf("\n\n Selecciona que hacer:\n");
-  printf("1. Sumar\n");
-  printf("2. Restar\n");
-  printf("3. Multiplicar\n");
-  printf("4. Dividir\n");
-  printf("5. Modulo\n");
-  printf("\n");
+  printf("  1. Sumar\n");
+  printf("  2. Restar\n");
+  printf("  3. Multiplicar\n");
+  printf("  4. Dividir\n");
+  printf("  5. Modulo\n");
+  printf("  6. Salir del programa\n  ");
+  scanf("%d", opc); 
 }
 
 void suma(){
