@@ -19,3 +19,7 @@ int main(){
 void titulo(){
   printf("\t &&& CALCULADORA &&&");
 }
+
+void menu(int * opc){
+  printf("\n\n Selecciona que hacer");
+}
