@@ -7,7 +7,7 @@ void menu(int *);
 void opciones(int);
 void division():
 void suma();
-
+void resta();
 void fin();
 
 int main(){
@@ -42,6 +42,8 @@ void opciones(int opc){
       suma();
       break;
     case 2:
+      resta();
+      break;
     case 3:
         multiplicar();
     case 4:
@@ -69,6 +71,18 @@ void suma(){
 
 void fin(){
   printf("\n  Fin del programa.");
+}
+
+void resta() {
+  printf("\t RESTA \n");
+  int n1, n2, resultado;
+  printf("\n Ingrese el primer valor: ");
+  scanf("%d", n1);
+  printf("\n Ingrese el segundo valor: ");
+  scanf("%d", n2);
+  resultado=n1-n2;
+  printf("\n Resultado: %d", resultado);
+
 }
 
 void modulo(){
