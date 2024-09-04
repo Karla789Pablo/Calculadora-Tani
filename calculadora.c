@@ -1,35 +1,6 @@
-#include<stdio.h>
-#include<stdlib.h>
-#include<windows.h>
-void titulo();
-void menu(int *);
-void opciones(int);
+
 void multiplicacion();
 void modulo();
-
-void fin();
-
-int main(){
-  titulo();
-  int opc;
-  menu();
-  scanf("%d", &opc);
-  while(opc!=6){
-    menu(&opc);
-    opciones(opc);
-    if(opc == 3){
-    	multiplicacion();
-    }
-    if(opc == 5){
-      modulo();
-    }
-    Sleep(5000);
-    system("cls";
-    menu();
-    scanf("%d", &opc);
-  }
-      
-}
 
 void modulo(){
       int first, second;
@@ -39,7 +10,7 @@ void modulo(){
     	printf("Ingresa el segundo valor\n");
     	scanf("%d",&second);
     	int resultado = first%second;
-    	printf("El resultado de %d % %d es %d\n", first, second, resultado)
+    	printf("El resultado de %d % %d es %d\n", first, second, resultado);
 }
 
 void multiplicacion(){
@@ -50,17 +21,7 @@ void multiplicacion(){
     	printf("Ingresa el segundo valor\n");
     	scanf("%d",&second);
     	int resultado = first%second;
-    	printf("El resultado de %d * %d es %d\n", first, second, resultado)
+    	printf("El resultado de %d * %d es %d\n", first, second, resultado);
 }
 
-void menu(){
-  printf("Menú:\n");
-  printf("1. Suma\n");
-  printf("2. Resta\n");
-  printf("3. Multiplicación\n");
-  printf("4. División\n");
-  printf("5. Módulo\n");
-  printf("6. Salir\n");
-  printf("Ingrese una opción (1-6): ");
-}
   
