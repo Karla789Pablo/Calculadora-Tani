@@ -42,17 +42,12 @@ void opciones(int opc){
       suma();
       break;
     case 2:
-      resta();
-      break;
     case 3:
         multiplicar();
-      break;
     case 4:
         division():
-        break
     case 5:
         modulo();
-        break;
     case 6:
       fin();
       break;
@@ -72,17 +67,10 @@ void suma(){
   printf("\n El resultado es %d", t);
 }
 
-void resta() {
-  int n1, n2, resultado;
-  printf ("\t RESTA \n");
-  printf ("\n Ingrese el primer valor: ");
-  scanf("%d", %n1);
-  printf ("\n Ingrese el segundo valor: ");
-  scanf("%d", n2);
-  resultado=n1-n2;
-  printf("\n Resultado: %d", resultado);
-  
+void fin(){
+  printf("\n  Fin del programa.");
 }
+
 void modulo(){
       int first, second;
       printf("\tMODULO\n");
@@ -117,8 +105,4 @@ void division(){
     }
     resultado = num1 / num2;
     printf("El resultado es: %.2f\n", resultado);
-}
-
-void fin(){
-  printf("\n  Fin del programa.");
 }
