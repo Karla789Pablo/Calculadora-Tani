@@ -5,7 +5,7 @@
 void titulo();
 void menu(int *);
 void opciones(int);
-
+void division():
 void suma();
 
 void fin();
@@ -45,6 +45,7 @@ void opciones(int opc){
     case 3:
         multiplicar();
     case 4:
+        division():
     case 5:
         modulo();
     case 6:
@@ -90,4 +91,18 @@ void multiplicacion(){
     	scanf("%d",&second);
     	int resultado = first%second;
     	printf("El resultado de %d * %d es %d\n", first, second, resultado);
+}
+
+void division(){
+    float num1, num2, resultado;
+    printf("Ingrese el numerador: ");
+    scanf("%f", &num1);
+    printf("Ingrese el denominador: ");
+    scanf("%f", &num2);
+    if (num2 == 0) {
+      printf("Division por cero no permitida.\n");
+      return 0;
+    }
+    resultado = num1 / num2;
+    printf("El resultado es: %.2f\n", resultado);
 }
